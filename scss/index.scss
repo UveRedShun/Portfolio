@@ -1,0 +1,205 @@
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+//  MEDIA QUERIES
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+@import "media-queries";
+$breakpoint-md: 960px;
+@mixin sp-only {
+    @media (max-width: ($breakpoint-md)) {
+        @content;
+    }
+}
+
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+//  SETTINGS
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.wrap {
+	overflow: hidden;
+}
+
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+//  CONST
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+//  FONT SIZE
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$font-size-xxs: 0.5rem;
+$font-size-xs: 0.75rem;
+$font-size-sm: 0.875rem;
+$font-size-md: 1rem;
+$font-size-lg: 1.125rem;
+$font-size-xl: 1.25rem;
+$font-size-xxl: 1.875rem;
+
+.text-xxs {
+    font-size: $font-size-xxs;
+}
+
+.text-xs {
+    font-size: $font-size-xs;
+}
+
+.text-sm {
+    font-size: $font-size-sm;
+}
+
+.text-md {
+    font-size: $font-size-md;
+}
+
+.text-lg {
+    font-size: $font-size-lg;
+}
+
+.text-xl {
+    font-size: $font-size-xl;
+}
+
+.text-xxl {
+    font-size: $font-size-xxl;
+}
+
+
+//  COLOR 
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$black: #000000;
+
+$black-opc50: rgba(0, 0, 0, 0.5);
+
+$mainRed: rgba(254, 8, 8, 0.3);
+
+$mainGray: #231F1F;
+
+.bg-black{
+    background-color: $black;
+}
+
+.bg-black__opc50{
+    background-color: $black-opc50;
+}
+
+.bg-mainRed{
+    background-color: $mainRed;
+}
+
+.bg-mainGray{
+    background-color: $mainGray;
+}
+
+
+//  VIEWPORT HEIGHT
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.vh-80{
+    height: 80vh;
+}
+
+.vh-60{
+    height: 60vh;
+}
+
+.vh-50{
+    height: 50vh;
+}
+
+.vh-40{
+    height: 40vh;
+}
+
+.vh-30{
+    height: 30vh;
+}
+
+.vh-20{
+    height: 20vh;
+}
+
+.vh-15{
+    height: 15vh;
+}
+
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+// MAIN VISUAL
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.title{
+    top:400px;
+    left: 100px;
+    font-size: 100px;
+    @include respond-below(md) {
+        top:100px;
+        left: 20px;
+        font-size: 30px;
+	}	
+}
+
+.subtitle{
+    top:530px;
+    left: 400px;
+    font-size: 40px;
+    @include respond-below(md) {
+		top: 140px;
+        left: 100px;
+        font-size: 10px;
+	}	
+}
+
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+//  SECTION 
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+//  SECTION ABOUT
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.selfphoto{
+    @include respond-below(md) {
+		top: 40px;
+        left: 40px;
+        font-size: 10px;
+        z-index: 1;
+	}	
+}
+
+.bg-selfphoto{
+    @include respond-below(md) {
+		top: 110px;
+        left: 60px;
+        font-size: 10px;
+        z-index: 0;
+        background-color: $black-opc50;
+	}	
+}
+
+//  SECTION SKILLS
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+.skill-icon{
+    width: 120px;
+    height: 120px;
+}
+
+
+//  SECTION PRODUCTS
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+
+
+//  SECTION CONTACTS
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+
+
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+//  FOOTER
+//–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––

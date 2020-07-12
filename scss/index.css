@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.wrap {
+  overflow: hidden;
+}
+
+.text-xxs {
+  font-size: 0.5rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+}
+
+.text-md {
+  font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.text-xxl {
+  font-size: 1.875rem;
+}
+
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-black__opc50 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-mainRed {
+  background-color: rgba(254, 8, 8, 0.3);
+}
+
+.bg-mainGray {
+  background-color: #231F1F;
+}
+
+.vh-80 {
+  height: 80vh;
+}
+
+.vh-60 {
+  height: 60vh;
+}
+
+.vh-50 {
+  height: 50vh;
+}
+
+.vh-40 {
+  height: 40vh;
+}
+
+.vh-30 {
+  height: 30vh;
+}
+
+.vh-20 {
+  height: 20vh;
+}
+
+.vh-15 {
+  height: 15vh;
+}
+
+.title {
+  top: 400px;
+  left: 100px;
+  font-size: 100px;
+}
+
+@media (max-width: 767px) {
+  .title {
+    top: 100px;
+    left: 20px;
+    font-size: 30px;
+  }
+}
+
+.subtitle {
+  top: 530px;
+  left: 400px;
+  font-size: 40px;
+}
+
+@media (max-width: 767px) {
+  .subtitle {
+    top: 140px;
+    left: 100px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .selfphoto {
+    top: 40px;
+    left: 40px;
+    font-size: 10px;
+    z-index: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .bg-selfphoto {
+    top: 110px;
+    left: 60px;
+    font-size: 10px;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.skill-icon {
+  width: 120px;
+  height: 120px;
+}
