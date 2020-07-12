@@ -53,6 +53,10 @@
   background-color: #231F1F;
 }
 
+.text-black {
+  color: #000000;
+}
+
 .vh-80 {
   height: 80vh;
 }
@@ -79,6 +83,10 @@
 
 .vh-15 {
   height: 15vh;
+}
+
+.vw-80 {
+  width: 83vw;
 }
 
 .title {
@@ -109,10 +117,22 @@
   }
 }
 
+.main-visual {
+  position: relative;
+  top: 0;
+}
+
+@media (max-width: 767px) {
+  .main-visual {
+    position: absolute;
+    top: 15vh;
+  }
+}
+
 @media (max-width: 767px) {
   .selfphoto {
     top: 40px;
-    left: 40px;
+    left: 60px;
     font-size: 10px;
     z-index: 1;
   }
@@ -120,8 +140,10 @@
 
 @media (max-width: 767px) {
   .bg-selfphoto {
-    top: 110px;
-    left: 60px;
+    width: 170px;
+    height: 200px;
+    top: 60px;
+    left: 80px;
     font-size: 10px;
     z-index: 0;
     background-color: rgba(0, 0, 0, 0.5);
