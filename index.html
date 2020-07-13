@@ -10,11 +10,11 @@
         <script src='index.js'></script>
     </head>
     <body>
-        <header>
-            <div class="container-fluid vh-80 py-5 py-md-0 bg-black">
+        <header class="">
+            <div class="container-fluid py-md-0 bg-black">
                 <div class="row">
                     <div class="col-12 px-0">
-                        <div class="main-visual bg-dark vh-90 text-white">
+                        <div class="main-visual text-white">
                             <img class="vw-100" src="img/cat.jpg">
                             <h1 class="title position-absolute">Portfolio</h1>
                             <p class="subtitle text-center position-absolute">Created by Shunta</p>
@@ -23,34 +23,42 @@
                 </div>
             </div>
         </header>
-        <section id="about">
+        <section id="about" class="bg-mainGray secpdd">
             <div class="container-fluid bg-mainGray py-5">
                 <div class="row">
-                    <div class="col-11 bg-mainRed d-md-flex justify-content-center mx-auto py-4">
-                        <h1 class="text-white">About</h1>
-                        <div class="col-md-5 vh-40 p-4">
-                            <div class="selfphoto position-absolute">
-                                <img class="vh-30" src="img/myself.jpg" alt="">
+                    <div class="col-11 bg-mainRed d-md-flex mx-auto">
+                        <h2 class="text-white text-secttl pt-5">About</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-11 bg-mainRed d-md-flex justify-content-center mx-auto py-4 py-md-0">
+                        <div class="txt__about col-md-5 py-4 py-md-0 text-black">
+                            <p>ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+                                ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+                                ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+                            </p>
+                        </div>
+                        <div class="col-md-5 vh-40 text-center">
+                            <div class="selfphoto position-absolute　text-center">
+                                <img class="selfphoto__img" src="img/myself.jpg" alt="">
                             </div>
                             <div class="bg-selfphoto position-absolute"></div>
                         </div>
-                        <div class="col-md-5 vh-30 py-4 text-black">
-                            <p>ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
-                                ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
-                                ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="skills">
-            <div class="container-fluid bg-mainGray py-5">
-                <h1 class="text-white">Skills</h1>
+        <section id="skills" class="bg-mainGray secpdd">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-11 px-0 mx-auto d-md-flex pt-4 my-4 text-white">
+                        <h1 class="text-white text-secttl">Skills</h1>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-11 px-0 mx-auto d-md-flex pt-4 my-4 text-white">
                         <div class="col-12 col-md-3 vh-60 py-4">
-                            <div class="skill-icon rounded-circle bg-black mx-auto"></div>
+                            <div class="skill-icon rounded-circle mx-auto"></div>
                             <div class="skill-content my-3">
                                 <p class="skills-title text-center">Web Coding</p>
                                 <p>ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
@@ -60,7 +68,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-3 vh-60 py-4">
-                            <div class="skill-icon rounded-circle bg-black mx-auto"></div>
+                            <div class="skill-icon rounded-circle mx-auto"></div>
                             <div class="skill-content my-3">
                                 <p class="skills-title text-center">Web Coding</p>
                                 <p>ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
@@ -70,7 +78,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-3 vh-60 py-4">
-                            <div class="skill-icon rounded-circle bg-black mx-auto"></div>
+                            <div class="skill-icon rounded-circle mx-auto"></div>
                             <div class="skill-content my-3">
                                 <p class="skills-title text-center">Web Coding</p>
                                 <p>ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
@@ -80,7 +88,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-3 vh-60 py-4">
-                            <div class="skill-icon rounded-circle bg-black mx-auto"></div>
+                            <div class="skill-icon rounded-circle mx-auto"></div>
                             <div class="skill-content my-3">
                                 <p class="skills-title text-center">Web Coding</p>
                                 <p>ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
@@ -93,38 +101,42 @@
                 </div>
             </div>
         </section>
-        <section id="products">
-            <div class="container-fluid bg-mainGray py-5">
+        <section id="products" class="bg-mainGray secpdd pb-5">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-11 bg-mainRed px-0 d-md-flex mx-auto">
-                        <h1 class="text-white">Production</h1>
-                        <h5>Love and Beer</h5>
-                        <div class="col-md-6 vh-40">
-                            <div class="products-img position-absolute">
-                                <img class="vh-40 vw-80" src="img/beer.png" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-6 vh-30 pt-3">
+                    <div class="col-11 bg-mainRed px-0 py-5 d-md-flex mx-auto">
+                        <h1 class="text-white text-secttl">Production</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-11 bg-mainRed px-0 py-5 d-md-flex mx-auto">
+                        <div class="col-md-6 vh-80 pt-3">
+                            <h5 class="py-4">Love and Beer</h5>
                             <p>ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
                                 ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
                                 ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
                             </p>
+                        </div>
+                        <div class="col-md-6 vh-80 text-center">
+                            <div class="products-img position-absolute　text-center">
+                                <img class="products-img__Loveandbeer" src="img/beer.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-11 bg-mainRed px-0 d-md-flex mx-auto">
-                        <h5>Idea Box</h5>
-                        <div class="col-md-6 vh-50">
-                            <div class="products-img position-absolute">
-                                <img class="vh-50 vw-80" src="img/ideabox.png" alt="">
-                            </div>
-                        </div>
+                    <div class="col-11 bg-mainRed px-0 py-5 d-md-flex mx-auto">
                         <div class="col-md-6 vh-30 pt-3">
+                            <h5 class="py-4">Idea Box</h5>
                             <p>ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
                                 ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
                                 ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
                             </p>
+                        </div>
+                        <div class="col-md-6 vh-50 text-center">
+                            <div class="products-img position-absolute　text-center">
+                                <img class="products-img__ideabox text-center" src="img/ideabox.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -37,12 +37,30 @@
   font-size: 1.875rem;
 }
 
+.text-secttl {
+  font-size: 10rem;
+  padding-left: 3rem;
+  padding-bottom: 10rem;
+}
+
+@media (max-width: 767px) {
+  .text-secttl {
+    font-size: 4rem;
+    padding-left: 0.5rem;
+    padding-bottom: 5rem;
+  }
+}
+
 .bg-black {
   background-color: #000000;
 }
 
 .bg-black__opc50 {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-black__opc30 {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .bg-mainRed {
@@ -98,7 +116,7 @@
 @media (max-width: 767px) {
   .title {
     top: 100px;
-    left: 20px;
+    left: 15px;
     font-size: 30px;
   }
 }
@@ -118,8 +136,7 @@
 }
 
 .main-visual {
-  position: relative;
-  top: 0;
+  height: 700px;
 }
 
 @media (max-width: 767px) {
@@ -129,13 +146,54 @@
   }
 }
 
+header {
+  height: 115vh;
+  background-color: #000000;
+}
+
+.secpdd {
+  padding-top: 20rem;
+}
+
+.txt__about {
+  height: 80vh;
+}
+
+@media (max-width: 767px) {
+  .txt__about {
+    height: 50vh;
+  }
+}
+
+.selfphoto {
+  z-index: 1;
+}
+
 @media (max-width: 767px) {
   .selfphoto {
     top: 40px;
     left: 60px;
     font-size: 10px;
-    z-index: 1;
   }
+}
+
+.selfphoto__img {
+  width: 30rem;
+  height: 35rem;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .selfphoto__img {
+    width: 13rem;
+    height: 16rem;
+    left: 60px;
+    font-size: 10px;
+  }
+}
+
+.bg-selfphoto {
+  z-index: 0;
 }
 
 @media (max-width: 767px) {
@@ -145,7 +203,6 @@
     top: 60px;
     left: 80px;
     font-size: 10px;
-    z-index: 0;
     background-color: rgba(0, 0, 0, 0.5);
   }
 }
@@ -153,4 +210,29 @@
 .skill-icon {
   width: 120px;
   height: 120px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.products-img__Loveandbeer {
+  width: 30vw;
+  height: 50vh;
+}
+
+@media (max-width: 767px) {
+  .products-img__Loveandbeer {
+    width: 82vw;
+    height: 50vh;
+  }
+}
+
+.products-img__ideabox {
+  width: 30vw;
+  height: 50vh;
+}
+
+@media (max-width: 767px) {
+  .products-img__ideabox {
+    width: 82vw;
+    height: 50vh;
+  }
 }
