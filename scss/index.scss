@@ -72,10 +72,26 @@ $font-size-xxl: 1.875rem;
     font-size: 10rem;
     padding-left: 3rem;
     padding-bottom: 10rem;
+    position: relative;
     @include respond-below(md) {
         font-size: 4rem;
         padding-left: 0.5rem;
         padding-bottom: 5rem;
+	}
+}
+
+.text-secttl::after {
+    position: absolute;
+    bottom: 10rem;
+    left: 3.5rem;
+    z-index: 2;
+    content: '';
+    width: 30%;
+    height: 5px;
+    background-color: #FF0606;
+    @include respond-below(md) {
+        bottom: 4.5rem;
+        left: 1rem;
 	}
 }
 
@@ -196,13 +212,14 @@ $mainGray: #231F1F;
 .main-visual{
     height: 700px;
     @include respond-below(md) {
+    height: 500px;
     position: absolute;
-    top: 15vh;
+    top: 25vh;
     }
 }
 
 header{
-    height: 115vh;
+    height: 100vh;
     background-color: $black;
 }
 
