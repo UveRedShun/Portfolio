@@ -314,6 +314,12 @@ header{
     font-size: 3rem;
 }
 
+.skills-box{
+    @include respond-below(md) {
+        padding-bottom: 30rem;
+    }
+}
+
 
 //  SECTION PRODUCTS
 //––––––––––––––––––––––––––––––––––––––––––––––––––

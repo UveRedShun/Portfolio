@@ -278,6 +278,12 @@ header {
   font-size: 3rem;
 }
 
+@media (max-width: 767px) {
+  .skills-box {
+    padding-bottom: 30rem;
+  }
+}
+
 .products-img__Loveandbeer {
   width: 40vw;
   height: 70vh;
