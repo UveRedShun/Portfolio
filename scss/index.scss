@@ -79,6 +79,17 @@ $font-size-xxl: 1.875rem;
 	}
 }
 
+.txt-pdttl{
+    font-size: 4rem;
+    padding-left: 1rem;
+    padding-bottom: 10rem;
+    @include respond-below(md) {
+        font-size: 2rem;
+        padding-left: 0.5rem;
+        padding-bottom: 5rem;
+	}
+}
+
 
 //  COLOR 
 //––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -195,6 +206,26 @@ header{
     background-color: $black;
 }
 
+.order1{
+    @include respond-below(md) {
+        order: 1;
+    }
+}
+
+.order2{
+    @include respond-below(md) {
+        order: 2;
+    }
+}
+
+.flexbox{
+    display: flex;
+    @include respond-below(md) {
+        flex-direction: column;
+    }
+}
+
+
 //–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 //  SECTION 
 //–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -259,8 +290,8 @@ header{
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 .products-img__Loveandbeer{
-    width: 30vw;
-    height: 50vh;
+    width: 40vw;
+    height: 70vh;
     @include respond-below(md) {
         width: 82vw;
         height: 50vh;
@@ -268,12 +299,26 @@ header{
 }
 
 .products-img__ideabox{
-    width: 30vw;
-    height: 50vh;
+    width: 40vw;
+    height: 70vh;
     @include respond-below(md) {
         width: 82vw;
         height: 50vh;
 	}
+}
+
+.pd-img{
+    height: 100vh;
+    @include respond-below(md) {
+        height: 50vh;
+    }
+}
+
+.pd-txt{
+    height: 100vh;
+    @include respond-below(md) {
+        height: 50vh;
+    }
 }
 
 

@@ -51,6 +51,20 @@
   }
 }
 
+.txt-pdttl {
+  font-size: 4rem;
+  padding-left: 1rem;
+  padding-bottom: 10rem;
+}
+
+@media (max-width: 767px) {
+  .txt-pdttl {
+    font-size: 2rem;
+    padding-left: 0.5rem;
+    padding-bottom: 5rem;
+  }
+}
+
 .bg-black {
   background-color: #000000;
 }
@@ -151,6 +165,28 @@ header {
   background-color: #000000;
 }
 
+@media (max-width: 767px) {
+  .order1 {
+    order: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .order2 {
+    order: 2;
+  }
+}
+
+.flexbox {
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .flexbox {
+    flex-direction: column;
+  }
+}
+
 .secpdd {
   padding-top: 20rem;
 }
@@ -214,8 +250,8 @@ header {
 }
 
 .products-img__Loveandbeer {
-  width: 30vw;
-  height: 50vh;
+  width: 40vw;
+  height: 70vh;
 }
 
 @media (max-width: 767px) {
@@ -226,13 +262,33 @@ header {
 }
 
 .products-img__ideabox {
-  width: 30vw;
-  height: 50vh;
+  width: 40vw;
+  height: 70vh;
 }
 
 @media (max-width: 767px) {
   .products-img__ideabox {
     width: 82vw;
+    height: 50vh;
+  }
+}
+
+.pd-img {
+  height: 100vh;
+}
+
+@media (max-width: 767px) {
+  .pd-img {
+    height: 50vh;
+  }
+}
+
+.pd-txt {
+  height: 100vh;
+}
+
+@media (max-width: 767px) {
+  .pd-txt {
     height: 50vh;
   }
 }
