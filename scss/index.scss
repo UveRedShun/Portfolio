@@ -86,12 +86,13 @@ $font-size-xxl: 1.875rem;
     left: 3.5rem;
     z-index: 2;
     content: '';
-    width: 30%;
+    width: 12rem;
     height: 5px;
     background-color: #FF0606;
     @include respond-below(md) {
         bottom: 4.5rem;
         left: 1rem;
+        width: 5rem;
 	}
 }
 
@@ -262,32 +263,35 @@ header{
 }
 
 .selfphoto{
-    z-index: 1;
     @include respond-below(md) {
-		top: 40px;
-        left: 60px;
-        font-size: 10px;
-	}	
+        height: 16rem;
+        position: relative;
+	}
 }
 
 .selfphoto__img{
     width: 30rem;
     height: 35rem;
+    position: relative;
     z-index: 1;
     @include respond-below(md) {
         width: 13rem;
         height: 16rem;
-        left: 60px;
-        font-size: 10px;
 	}	
 }
 
 .bg-selfphoto{
     z-index: 0;
+    width: 30rem;
+    left: 4rem;
+    height: 35rem;
+    top: 3rem;
+    background-color: $black-opc50;
+    position: relative;
     @include respond-below(md) {
-        width: 170px;
-        height: 200px;
-		top: 60px;
+        width: 13rem;
+        height: 16rem;
+		top: 1rem;
         left: 80px;
         font-size: 10px;
         background-color: $black-opc50;
