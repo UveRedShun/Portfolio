@@ -90,6 +90,13 @@ $font-size-xxl: 1.875rem;
 	}
 }
 
+.typing {
+    opacity: 0;
+    }
+.typing span {
+    opacity: 0;
+}
+
 .text-secttl::after {
     position: absolute;
     bottom: 10rem;
@@ -156,6 +163,14 @@ $mainGray: #231F1F;
 
 .text-black{
     color: $black;
+}
+
+.txt-red{
+    color: red !important;
+}
+
+.txt-white{
+    color: white !important;
 }
 
 
@@ -275,6 +290,9 @@ header{
 
 .txt__about{
     height: 80vh;
+    transform:translateX(-100px);
+    opacity: 0;
+    transition:opacity 1s,transform 1.5s;
     @include respond-below(lg) {
         height: 30vh;
     }
@@ -284,6 +302,9 @@ header{
 }
 
 .selfphoto{
+    transform:translateX(100px);
+    opacity: 0;
+    transition:opacity 1s,transform 1.5s;
     @include respond-below(lg) {
         position: relative;
         height: 45vh;
@@ -324,7 +345,39 @@ header{
     font-size: 3rem;
 }
 
+.skills-box:nth-child(1){
+    transform:translateY(100px);
+    opacity: 0;
+    transition:opacity 1s,transform 1.5s;
+}
+
+.skills-box:nth-child(2){
+    transform:translateY(150px);
+    opacity: 0;
+    transition:opacity 2s,transform 1.5s;
+}
+
+.skills-box:nth-child(3){
+    transform:translateY(200px);
+    opacity: 0;
+    transition:opacity 3s,transform 1.5s;
+}
+
+.skills-box:nth-child(4){
+    transform:translateY(250px);
+    opacity: 0;
+    transition:opacity 2s,transform 1.5s;
+}
+
 .skills-box{
+    @include respond-below(lg) {
+        transform:translateY(100px);
+        opacity: 0;
+        transition:opacity 1s,transform 1s;
+    }
+}
+
+.skills-box:not(:last-child){
     @include respond-below(lg) {
         padding-bottom: 30rem;
     }
@@ -335,9 +388,9 @@ header{
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
 .products-img{
-    transform:translateX(50px); /* 最初は元の位置より左にずらしておく */
-    opacity: 0;  /* 最初は非表示にしておく */
-    transition:opacity 1s,transform 1s;
+    transform:translateX(100px);
+    opacity: 0;
+    transition:opacity 1s,transform 1.5s;
 }
 
 .products-img__Loveandbeer{
@@ -352,9 +405,8 @@ header{
 }
 
 .fadein{
-    opacity:1 !important; /* 表示させる */
-    transform:translateX(0) !important; /* 位置を最初の位置に戻す */
-    z-index: 5;
+    opacity:1 !important;
+    transform:translateX(0) !important;
 }
 
 .products-img__ideabox{
@@ -377,9 +429,9 @@ header{
 
 .pd-txt{
     height: 100vh;
-    transform:translateX(-50px); /* 最初は元の位置より左にずらしておく */
-    opacity: 0;  /* 最初は非表示にしておく */
-    transition:opacity 1s,transform 1s;
+    transform:translateX(-100px);
+    opacity: 0;
+    transition:opacity 1s,transform 1.5s;
     @include respond-below(lg) {
         height: 50vh;
     }
@@ -400,7 +452,7 @@ header{
     width: 90px;
     height: 90px;
     position: fixed;
-    right: 1rem;
+    right: 3%;
     bottom: 2.5rem;
     opacity: 0.6;
     z-index: 3;
@@ -427,6 +479,9 @@ header{
     left: 0;
     margin: auto;
     text-align: center;
+    @include respond-below(lg) {
+        font-size: 1.5rem;
+    }
 }
 #page_top a::after{
     content: 'PAGE TOP';
@@ -440,4 +495,8 @@ header{
     margin: auto;
     text-align: center;
     color: #fff;
+    @include respond-below(lg) {
+        font-size: 0.5rem;
+        top: 30px;
+    }
 }
