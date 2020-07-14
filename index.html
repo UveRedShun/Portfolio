@@ -8,7 +8,8 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/7849ae5b05.js" crossorigin="anonymous"></script>
         <link rel='stylesheet' type='text/css' media='screen' href='scss/index.css'>
-        <script src='index.js'></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script type="text/javascript" src='./js/index.js'></script>
     </head>
     <body>
         <div id="page_top"><a href="#"></a></div>
@@ -34,13 +35,13 @@
                 </div>
                 <div class="row">
                     <div class="col-11 flexbox bg-mainRed d-lg-flex justify-content-center mx-auto py-md-0">
-                        <div class="txt__about col-md-5 py-lg-0 text-black order2">
+                        <div class="txt__about col-md-5 mx-auto py-lg-0 text-black order2">
                             <p>ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
                                 ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
                                 ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
                             </p>
                         </div>
-                        <div class="col-md-5 text-center">
+                        <div class="col-lg-5 text-center">
                             <div class="selfphoto position-relative text-center order1">
                                 <img class="selfphoto__img" src="img/myself.jpg" alt="">
                             </div>
@@ -83,7 +84,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-3 vh-60 skills-box">
-                            <div class="skill-icon rounded-circle mx-auto">
+                            <div id="skill-icon" class="skill-icon rounded-circle mx-auto">
                                 <i class="skill-icon__img fab fa-shopify"></i>
                             </div>
                             <div class="skill-content my-4">
@@ -139,7 +140,7 @@
                         <div class="col-lg-6 pd-txt pt-3 order2">
                             <h5 class="py-4 text-white txt-pdttl">Ideabox</h5>
                             <p class="text-white">使用フレーム : Vue.js (DB：Firebase)</p>
-                            <p class="text-white">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
+                            <p class="txt-pd text-white">ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
                                 ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
                                 ここにはテキストが入ります。ここにはテキストが入ります。ここにはテキストが入ります。
                             </p>
@@ -163,6 +164,5 @@
                 </div>
             </div>
         </footer>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     </body>
 </html>

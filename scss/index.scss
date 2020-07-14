@@ -77,6 +77,16 @@ $font-size-xxl: 1.875rem;
         font-size: 4rem;
         padding-left: 0.5rem;
         padding-bottom: 5rem;
+    }
+    @include respond-below(md) {
+        font-size: 5rem;
+        padding-left: 0.5rem;
+        padding-bottom: 5rem;
+	}
+    @include respond-below(sm) {
+        font-size: 3.5rem;
+        padding-left: 0.5rem;
+        padding-bottom: 5rem;
 	}
 }
 
@@ -276,10 +286,13 @@ header{
 .selfphoto{
     @include respond-below(lg) {
         position: relative;
-        height: 30vh;
+        height: 45vh;
+    }
+    @include respond-below(md) {
+        height: 20vh;
     }
     @include respond-below(sm) {
-        height: 45vh;
+        height: 50vh;
     }
 }
 
@@ -321,6 +334,12 @@ header{
 //  SECTION PRODUCTS
 //––––––––––––––––––––––––––––––––––––––––––––––––––
 
+.products-img{
+    transform:translateX(50px); /* 最初は元の位置より左にずらしておく */
+    opacity: 0;  /* 最初は非表示にしておく */
+    transition:opacity 1s,transform 1s;
+}
+
 .products-img__Loveandbeer{
     width: 100%;
     height: 70vh;
@@ -330,6 +349,12 @@ header{
         width: 82vw;
         height: 50vh;
 	}
+}
+
+.fadein{
+    opacity:1 !important; /* 表示させる */
+    transform:translateX(0) !important; /* 位置を最初の位置に戻す */
+    z-index: 5;
 }
 
 .products-img__ideabox{
@@ -352,6 +377,9 @@ header{
 
 .pd-txt{
     height: 100vh;
+    transform:translateX(-50px); /* 最初は元の位置より左にずらしておく */
+    opacity: 0;  /* 最初は非表示にしておく */
+    transition:opacity 1s,transform 1s;
     @include respond-below(lg) {
         height: 50vh;
     }
