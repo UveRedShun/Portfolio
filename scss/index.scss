@@ -266,43 +266,32 @@ header{
 .txt__about{
     height: 80vh;
     @include respond-below(lg) {
-        height: 50vh;
+        height: 30vh;
+    }
+    @include respond-below(sm) {
+        height: 40vh;
     }
 }
 
 .selfphoto{
     @include respond-below(lg) {
-        height: 16rem;
         position: relative;
-	}
+        height: 30vh;
+    }
+    @include respond-below(sm) {
+        height: 45vh;
+    }
 }
 
 .selfphoto__img{
-    width: 30rem;
-    height: 35rem;
+    width: 80%;
+    height: 100%;
     position: relative;
     z-index: 1;
+    box-shadow: 2rem 2rem 0 0 $black-opc50 ;
     @include respond-below(lg) {
         width: 13rem;
         height: 16rem;
-	}	
-}
-
-.bg-selfphoto{
-    z-index: 0;
-    width: 30rem;
-    left: 4rem;
-    height: 35rem;
-    top: 3rem;
-    background-color: $black-opc50;
-    position: relative;
-    @include respond-below(lg) {
-        width: 13rem;
-        height: 16rem;
-		top: 1rem;
-        left: 80px;
-        font-size: 10px;
-        background-color: $black-opc50;
 	}	
 }
 
