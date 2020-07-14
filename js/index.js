@@ -1,11 +1,9 @@
 
 $(function(){
     $(".skill-icon").mouseover(function(){
-        $(this).css("border","3px solid #ffffff");
         $(this).children(".skill-icon__img").addClass('txt-red');
     });
     $(".skill-icon").mouseout(function(){
-        $(this).css("border","0px");
         $(this).children(".skill-icon__img").removeClass('txt-red');
     });
 });
