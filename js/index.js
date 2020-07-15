@@ -1,4 +1,3 @@
-
 $(function(){
     $(".skill-icon").mouseover(function(){
         $(this).children(".skill-icon__img").addClass('txt-red');
@@ -78,5 +77,14 @@ $(function(){
                 'scrollTop': 0
             }, 1000);
             return false;
-        });
     });
+
+    $('#submit').on('click',function(){
+        $('.js-modal').fadeIn();
+        return false;
+    });
+    $('.js-modal-close').on('click',function(){
+        $('.js-modal').fadeOut();
+        return false;
+    });
+});

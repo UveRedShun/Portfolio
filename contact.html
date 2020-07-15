@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Portfolio</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/7849ae5b05.js" crossorigin="anonymous"></script>
+        <link rel='stylesheet' type='text/css' media='screen' href='scss/index.css'>
+    </head>
+    <body>
+        <section id="contact" class="bg-mainGray secCon">
+            <div class="container-fluid bg-mainGray 100vh">
+                <div class="row">
+                    <div class="col-10 bg-mainRed d-lg-flex mx-auto">
+                        <h2 class="text-white text-secCon pt-5">Contact</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10 bg-mainRed d-lg-flex mx-auto p-5 text-white">
+                        <form class="mx-auto" action="form.php">
+                            <dl class="d-lg-flex">
+                                <dd class="tblRq">＊必須</dd>
+                                <dt class="tblttl"><label for="fname">名前</label></dd>
+                                <dd class="tblContent"><input type="text" id="fname" name="firstname" placeholder="FirstName" required></dd>
+                            </dl>
+                            <dl class="d-lg-flex">
+                                <dd class="tblRq">＊必須</dd>
+                                <dt class="tblttl"><label for="lname">メールアドレス</label></dt>
+                                <dd class="tblContent"><input type="text" id="lname" name="lastname" placeholder="MailAddress" required></dd>
+                            </dl>
+                            <dl class="d-lg-flex">
+                                <dd class="tblRq">＊必須</dd>
+                                <dt class="tblttl"><label for="country">要件</label></dt>
+                                <dd class="tblContent">
+                                    <select id="country" name="country">
+                                        <option value="australia">案件のご相談</option>
+                                        <option value="canada">イベント等勧誘</option>
+                                        <option value="usa">その他</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                            <dl class="d-lg-flex">
+                                <dd class="tblRq">＊必須</dd>
+                                <dt class="tblttl"><label for="subject">Subject</label></dd>
+                                <dd class="tblContent"><textarea id="subject" name="subject" placeholder="内容" style="height:200px" required></textarea></dd>
+                            </dl>
+                            <dl class="d-flex justify-content-end">
+                                <dd><input id="submit" class="submit backbtn" type="submit"></input></dd>
+                            </dl>
+                        </form>
+                    </div>
+                    <div id="modal01" class="modal js-modal">
+                        <div class="modal__bg js-modal-close"></div>
+                        <div class="modal__content">
+                            <p>送信したお。</p>
+                            <a class="text-black js-modal-close" href="" >閉じる</a>
+                        </div><!--modal__inner-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 mx-0 bg-black py-2">
+                        <p class="text-left pl-3"><a class="text-white" href="index.html">TOP PAGE</a></p>
+                        <p class="text-white text-center">©️Shunta Watabe 2020</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script type="text/javascript" src='./js/index.js'></script>
+    </body>
+</html>

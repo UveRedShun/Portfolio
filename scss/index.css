@@ -68,6 +68,37 @@
   }
 }
 
+.text-secCon {
+  font-size: 6rem;
+  padding-left: 3rem;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+@media (max-width: 959px) {
+  .text-secCon {
+    font-size: 4rem;
+    padding-left: 0.5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (max-width: 766px) {
+  .text-secCon {
+    font-size: 5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .text-secCon {
+    font-size: 3.5rem;
+    padding-left: 0.5rem;
+    padding-bottom: 5rem;
+  }
+}
+
 .typing {
   opacity: 0;
 }
@@ -90,6 +121,26 @@
 
 @media (max-width: 959px) {
   .text-secttl::after {
+    bottom: 4.5rem;
+    left: 1rem;
+    width: 5rem;
+  }
+}
+
+.text-secCon::after {
+  position: absolute;
+  bottom: 5rem;
+  left: 3.5rem;
+  z-index: 2;
+  content: '';
+  width: 10rem;
+  height: 5px;
+  background-color: #FF0606;
+  transition: background-color 3s ease-out 2s,  width 0.25s ease-out 0.5s;
+}
+
+@media (max-width: 959px) {
+  .text-secCon::after {
     bottom: 4.5rem;
     left: 1rem;
     width: 5rem;
@@ -224,7 +275,7 @@ video {
 }
 
 header {
-  height: 100vh;
+  height: 110vh;
   background-color: #000000;
 }
 
@@ -257,6 +308,17 @@ header {
 @media (max-width: 959px) {
   .secpdd {
     padding-top: 10rem;
+  }
+}
+
+.secCon {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+@media (max-width: 959px) {
+  .secCon {
+    padding-top: 5rem;
   }
 }
 
@@ -474,6 +536,20 @@ header {
   }
 }
 
+.products-img__rpg {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  object-position: left;
+}
+
+@media (max-width: 959px) {
+  .products-img__rpg {
+    width: 82vw;
+    height: 50vh;
+  }
+}
+
 .pd-img {
   height: 100vh;
 }
@@ -495,6 +571,64 @@ header {
   .pd-txt {
     height: 50vh;
   }
+}
+
+form {
+  width: 80vh;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.tblttl {
+  width: 20vh;
+}
+
+.tblRq {
+  width: 10vh;
+}
+
+.tblContent {
+  width: 100%;
+}
+
+.backbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 #page_top {
@@ -557,4 +691,29 @@ header {
     font-size: 0.5rem;
     top: 30px;
   }
+}
+
+.modal {
+  display: none;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.modal__bg {
+  background: rgba(0, 0, 0, 0.8);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+
+.modal__content {
+  background: #fff;
+  left: 50%;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
 }
