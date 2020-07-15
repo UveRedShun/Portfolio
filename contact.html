@@ -18,32 +18,32 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-10 bg-mainRed d-lg-flex mx-auto p-5 text-white">
-                        <form class="mx-auto" action="form.php">
+                    <div class="col-10 bg-mainRed d-lg-flex mx-auto text-white">
+                        <form class="mx-auto" action="sendConfirm.html">
                             <dl class="d-lg-flex">
                                 <dd class="tblRq">＊必須</dd>
-                                <dt class="tblttl"><label for="fname">名前</label></dd>
-                                <dd class="tblContent"><input type="text" id="fname" name="firstname" placeholder="FirstName" required></dd>
+                                <dt class="tblttl"><label for="name">名前</label></dd>
+                                <dd class="tblContent"><input type="text" id="name" name="name" placeholder="Name" required></dd>
                             </dl>
                             <dl class="d-lg-flex">
                                 <dd class="tblRq">＊必須</dd>
-                                <dt class="tblttl"><label for="lname">メールアドレス</label></dt>
-                                <dd class="tblContent"><input type="text" id="lname" name="lastname" placeholder="MailAddress" required></dd>
+                                <dt class="tblttl"><label for="mail">メールアドレス</label></dt>
+                                <dd class="tblContent"><input type="text" id="mail" name="mail" placeholder="MailAddress" required></dd>
                             </dl>
                             <dl class="d-lg-flex">
                                 <dd class="tblRq">＊必須</dd>
-                                <dt class="tblttl"><label for="country">要件</label></dt>
+                                <dt class="tblttl"><label for="item">項目</label></dt>
                                 <dd class="tblContent">
-                                    <select id="country" name="country">
-                                        <option value="australia">案件のご相談</option>
-                                        <option value="canada">イベント等勧誘</option>
-                                        <option value="usa">その他</option>
+                                    <select id="item" name="item">
+                                        <option value="consult">案件のご相談</option>
+                                        <option value="event">イベント等勧誘</option>
+                                        <option value="other">その他</option>
                                     </select>
                                 </dd>
                             </dl>
                             <dl class="d-lg-flex">
                                 <dd class="tblRq">＊必須</dd>
-                                <dt class="tblttl"><label for="subject">Subject</label></dd>
+                                <dt class="tblttl"><label for="subject">要件</label></dd>
                                 <dd class="tblContent"><textarea id="subject" name="subject" placeholder="内容" style="height:200px" required></textarea></dd>
                             </dl>
                             <dl class="d-flex justify-content-end">
@@ -55,8 +55,8 @@
                         <div class="modal__bg js-modal-close"></div>
                         <div class="modal__content">
                             <p>送信したお。</p>
-                            <a class="text-black js-modal-close" href="" >閉じる</a>
-                        </div><!--modal__inner-->
+                            <a class="text-black js-modal-close" href="index.html">閉じる</a>
+                        </div>
                     </div>
                 </div>
             </div>
