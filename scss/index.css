@@ -337,13 +337,8 @@ header {
 
 @media (max-width: 959px) {
   .txt__about {
-    height: 30vh;
-  }
-}
-
-@media (max-width: 575px) {
-  .txt__about {
-    height: 40vh;
+    height: 100%;
+    padding-bottom: 5rem;
   }
 }
 

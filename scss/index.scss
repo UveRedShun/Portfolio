@@ -350,10 +350,8 @@ header{
     opacity: 0;
     transition:opacity 1s,transform 1.5s;
     @include respond-below(lg) {
-        height: 30vh;
-    }
-    @include respond-below(sm) {
-        height: 40vh;
+        height: 100%;
+        padding-bottom: 5rem;
     }
 }
 
