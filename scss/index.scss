@@ -286,6 +286,7 @@ $mainGray: #231F1F;
 video{
     height: 110vh;
     width: 100vw;
+    filter:opacity(60%);
     position: absolute;
     object-fit: cover;
     @include respond-below(lg) {
